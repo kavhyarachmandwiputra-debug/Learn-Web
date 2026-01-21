@@ -1,0 +1,20 @@
+/*Universal Selector*/
+* {
+    font-family: Arial, sans-serif;
+}
+
+/*Berdasarkan tag*/
+p {
+    color: blue;
+}
+
+/*Berdasarkan class*/
+.teksMerah {
+    color: red;
+}
+
+/*Berdasarkan ID*/
+#Judul-utama {
+    font-size: 32px;
+    font-weight: bold;
+}

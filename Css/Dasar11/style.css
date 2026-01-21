@@ -1,0 +1,33 @@
+a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a::after {
+      content: " 🔗";
+    }
+
+    input:focus {
+      border: 2px solid #3498db;
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+    p::first-letter {
+      font-size: 200%;
+      color: orange;
+    }
+
+    li:first-child {
+      color: green;
+    }
+
+    li:last-child {
+      color: purple;
+    }
