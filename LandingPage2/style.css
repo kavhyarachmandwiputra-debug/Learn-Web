@@ -1,90 +1,159 @@
 /*RESET*/
+/*
+Fungsi margin untuk mengatur jarak dari dalam elemen
+padding untuk mengatur jarak dari luar elemen
+box-sizing: border-box; untuk  memastikan bahwa padding
+dan border termasuk dalam lebar dan tinggi total elemen 
+*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*SMOOTH SCROLL*/
+/*Mengaktifkan efek pengguliran halus (animasi) saat berpindah antar bagian konten, 
+memberikan transisi yang halus.
+*/
+html {
+  scroll-behavior: smooth;
 }
 
 /*GLOBAL*/
+/*
+font-family untuk mengatur jenis font yang akan digunakan di dalam halaman web
+color untuk mengatur jenis warna font yang digunakan di dalam halaman web
+line-height untuk mengatur jarak antar baris teks
+text-decoration: none; untuk menghilangkan dekorasi text
+color: inherit; untuk mewarisi color dari elemen induknya
+width: 90%; untuk mengatur lebar sebesar 90% dari elemen induknya
+max-width: 900;
+margin: auto; untuk mengatur elemen agar berada di tengah secara horizontal
+dan nilai auto memerintahkan browser untuk membagi rata ruang kosong
+*/
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .container {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
 }
 
 /*HEADER*/
+/*
+background untuk mengatur warna latar belakang
+color untuk mengatur warna tulisan
+padding untuk mengatur jarak dari luar elemen
+font-size untuk mengatur ukuran font
+margin-right untuk mengatu jarak sebelah kanan dari dalam elemen
+*/
 .header {
-    background: #1e3a8a;
-    color: white;
-    padding: 15px 0;
+  background: #1e3a8a;
+  color: white;
+  padding: 15px 0;
 }
 .logo {
-    font-size: 22px;
+  font-size: 22px;
 }
 .nav a {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 /*HERO*/
+/*
+background untuk mengatur warna latar belakang elemen
+text-align untuk mengatur perataan text dan
+nilai center mrnandakan jika perataan tengah
+padding untuk mengatur jarak dari luar elemen
+margin-bottom untuk mengatur jarak bawah dari dalam elemen
+*/
 .hero {
-    background: #e5e7eb;
-    text-align: center;
-    padding: 60px 0;
+  background: #e5e7eb;
+  text-align: center;
+  padding: 60px 0;
 }
 .hero h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /*BUTTON*/
+/*
+display: inline-block; untuk membuat elemen tombol bersifat inline
+namun dapat diatur ukuran dan padding-nya seperti block element
+margin-top untuk mengatur jarak atas elemen tombol
+padding untuk mengatur jarak dalam elemen tombol
+background untuk mengatur warna latar belakang tombol
+color untuk mengatur warna teks pada tombol
+border-radius untuk mengatur sudut pembulatan border
+*/
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #1e3a8a;
-    color: white;
-    border-radius: 10px;
+  display: inline-block; /* membuat tombol inline-block */
+  margin-top: 20px; /* mengatur jarak atas tombol sebesar 20px */
+  padding: 10px 20px; /* mengatur jarak dalam tombol (10px atas-bawah, 20px kiri-kanan) */
+  background: #1e3a8a; /* mengatur warna latar belakang tombol dengan warna biru */
+  color: white; /* mengatur warna teks tombol menjadi putih */
+  border-radius: 10px; /* mengatur sudut pembulatan border sebesar 10px */
 }
 
 /*SECTION*/
+/*
+padding untuk mengatur jarak dari luar elemen
+margin-bottom untuk mengatur jarak bawah elemen heading
+background untuk mengatur warna latar belakang section
+*/
 .section {
-    padding: 50px 0;
+  padding: 50px 0; /* mengatur jarak dalam section (50px atas-bawah, 0 kiri-kanan) */
 }
 .section h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px; /* mengatur jarak bawah heading section sebesar 15px */
 }
 .light {
-    background: #f9fafb;
+  background: #f9fafb; /* mengatur warna latar belakang section menjadi abu-abu terang */
 }
 
 /*LIST*/
+/*
+margin-left untuk mengatur jarak kiri elemen list agar terjadi indentasi
+margin-bottom untuk mengatur jarak bawah setiap item list
+*/
 .list {
-    margin-left: 20px;
+  margin-left: 20px; /* mengatur jarak kiri list sebesar 20px untuk indentasi */
 }
 .list li {
-    margin-bottom: 8px;
+  margin-bottom: 8px; /* mengatur jarak bawah setiap item list sebesar 8px */
 }
 
 /*CTA*/
+/*
+background untuk mengatur warna latar belakang call-to-action section
+color untuk mengatur warna teks pada CTA
+text-align untuk mengatur perataan teks
+padding untuk mengatur jarak dari luar elemen
+*/
 .cta {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 60px 0;
+  background: #1e3a8a; /* mengatur warna latar belakang CTA dengan warna biru */
+  color: white; /* mengatur warna teks CTA menjadi putih */
+  text-align: center; /* mengatur perataan teks CTA ke tengah */
+  padding: 60px 0; /* mengatur jarak dalam CTA (60px atas-bawah, 0 kiri-kanan) */
 }
 
 /*FOOTER*/
+/*
+background untuk mengatur warna latar belakang footer
+color untuk mengatur warna teks footer
+text-align untuk mengatur perataan teks
+padding untuk mengatur jarak dari luar elemen
+*/
 .footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+  background: #111827; /* mengatur warna latar belakang footer dengan warna gelap */
+  color: white; /* mengatur warna teks footer menjadi putih */
+  text-align: center; /* mengatur perataan teks footer ke tengah */
+  padding: 15px 0; /* mengatur jarak dalam footer (15px atas-bawah, 0 kiri-kanan) */
 }
